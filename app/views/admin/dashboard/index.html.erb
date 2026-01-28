@@ -1,0 +1,32 @@
+<div class="max-w-4xl mx-auto">
+  <h1 class="text-3xl font-bold text-gray-900 mb-6">Admin Dashboard</h1>
+
+  <div class="bg-white p-6 rounded-lg shadow mb-6">
+    <h2 class="text-xl font-semibold text-gray-800 mb-4">Registered Users</h2>
+    <table class="min-w-full">
+      <thead>
+        <tr class="border-b">
+          <th class="text-left py-2 text-gray-600">ID</th>
+          <th class="text-left py-2 text-gray-600">Nickname</th>
+          <th class="text-left py-2 text-gray-600">Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr class="border-b">
+            <td class="py-2"><%= user.id %></td>
+            <td class="py-2 font-medium"><%= user.nickname %></td>
+            <td class="py-2 text-gray-500"><%= user.created_at.strftime("%Y-%m-%d %H:%M") %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow">
+    <h2 class="text-xl font-semibold text-gray-800 mb-4">Chat Management</h2>
+    <p class="text-gray-500">
+      This is where chat management functionality will be implemented.
+    </p>
+  </div>
+</div>

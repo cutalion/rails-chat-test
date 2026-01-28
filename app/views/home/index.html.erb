@@ -1,0 +1,24 @@
+<div class="max-w-2xl mx-auto text-center py-16">
+  <h1 class="text-4xl font-bold text-gray-900 mb-4">Welcome to Chat App</h1>
+  <p class="text-lg text-gray-600 mb-8">
+    A flexible chat system with configurable permissions.
+  </p>
+
+  <div class="flex justify-center gap-4">
+    <a href="<%= login_path %>" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium">
+      User Login
+    </a>
+    <a href="<%= admin_login_path %>" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium">
+      Admin Login
+    </a>
+  </div>
+
+  <div class="mt-12 text-left bg-white p-6 rounded-lg shadow">
+    <h2 class="text-xl font-semibold mb-4">Available Users</h2>
+    <p class="text-gray-600 mb-2">Login with any of these nicknames:</p>
+    <ul class="list-disc list-inside text-gray-700">
+      <li><strong>Users:</strong> alice, bob, charlie, diana, eve</li>
+      <li><strong>Admin:</strong> admin</li>
+    </ul>
+  </div>
+</div>
